@@ -5,6 +5,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #FFE9D6;
+    font-family: arial, sans-serif;
 }
 
 header{
@@ -45,8 +46,8 @@ header{
 .cart{
     padding-left: 15px;
     padding-top: 10px;
-    height: 40px;
-    width: 40px;
+    height: 25px;
+    width: 25px;
 }
 
 .counter{
@@ -69,12 +70,13 @@ header{
     font-weight: bold;
     margin-top: 10%;
     color: #FF7A00;
+    width: 30%;
 }
 
 .hero-image img{
-    height: 500px;
-    width: 600px;
-    margin-top: 5%;
+    height: 400px;
+    width: 500px;
+    margin-top: 10%;
 }
 
 .shopping-btn{
@@ -110,13 +112,17 @@ header{
 
 .container2{
     display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 0;
 }
 
 .products{
     background-color: white;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
 }
 
 .products h2{
@@ -125,6 +131,8 @@ header{
     font-size: 1.7rem;
     font-weight: bolder;
 }
+
+
 
 .container2 img{
     width: 260px;
@@ -137,10 +145,8 @@ header{
 }
 
 .container2 button{
-    width: 200px;
     height: 35px;
     margin-bottom: 25px;
-    margin-left: 15px;
     background-color: #FF7A00;
     border-style: none;
     text-transform: uppercase;
