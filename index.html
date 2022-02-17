@@ -10,8 +10,16 @@
 </head>
 <body>
     <header>
+        <a href="/">
         <img src="Images/EMS.png" class="logo" alt="logo">
+    </a>
         <nav class="nav-links">
+            <button id="close" class="close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="42" viewBox="-9 0 38 40" preserveAspectRatio="xMidYMid meet">
+                    <path class="cross-1" fill="none" d="M0 10 L20 30" stroke="white" stroke-width="3"/>
+                    <path class="cross-2" fill="none" d="M20 10 L0 30" stroke="white" stroke-width="3"/>
+                  </svg> 
+            </button>
             <ul>
                 <li>
                     <a href="#">Intro</a>
@@ -24,13 +32,25 @@
                 </li>
             </ul>
         </nav>
+        
         <div id="cart-section">
-        <img src="Images/cart.png" class="cart" alt="cart"><p class="counter">0</p>
+            <button class="cart-bttn">
+        <img src="Images/cart.png" class="cart" alt="cart">
+        <span class="counter">0</span>
+    </button>
+    <button id="handburger" class="handburger">
+        <svg viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+          </svg>
+    </button>
     </div>
+
     </header>
     <div class="hero-section">
     <div class="container" >
-          <h3>the e-millenial store</h3>
+          <h3>the <br>e-millenial <br>store</h3>
         <div class="hero-image">
           <img src="Images/heroImage.png" alt="">
         </div>

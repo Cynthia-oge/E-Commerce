@@ -35,31 +35,39 @@ header{
     color: black;
 }
 
-#cart-section{
+
+.cart-bttn{
     display: flex;
+    background-color: transparent;
     background-color: #FF9A3D;
-    height: 50px;
-    width: 90px;
+    height: 56px;
+    width: 100px;
     margin-top: 10px;
     border-radius: 20px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 15px;
 }
 .cart{
-    padding-left: 15px;
-    padding-top: 10px;
-    height: 25px;
-    width: 25px;
+    padding: 4px 7px;
+    /* padding-top: 10px; */
+    height: 30px;
+    width: 30px;
 }
 
-.counter{
-   font-weight: bold;
+.cart-bttn .counter {
+   font-weight: 500;
    color: white;
-   font-size: 20px; 
-   padding-left: 3px;
+   font-size: 1.5rem; 
+   margin-left: 3px;
+   margin-top: 2px;
 }
 
 /* the hero section */
 .container{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -70,13 +78,14 @@ header{
     font-weight: bold;
     margin-top: 10%;
     color: #FF7A00;
-    width: 30%;
+    /* width: 30%; */
 }
 
 .hero-image img{
-    height: 400px;
+    /* height: 400px;
     width: 500px;
-    margin-top: 10%;
+    margin-top: 10%; */
+    max-width: 630px;
 }
 
 .shopping-btn{
@@ -172,6 +181,9 @@ footer img{
     padding-top: 20px;
 }
 
+.handburger, .close{
+    display: none;
+}
 @media screen and (max-width: 700px){
     .container2{
         display: grid;
@@ -190,13 +202,14 @@ footer img{
 }
 
 @media screen and (max-width: 500px){
+    
     .container2{
         display: grid;
         grid-template-columns: auto;
     
     }
     .container{
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 100%;
     }
     footer{
@@ -210,32 +223,55 @@ footer img{
          font-size: 3em;
          text-align: center;
          width: 100%;
+         margin: 24px auto 0;
+     }
+     .hero-section .hero-image{
+         margin: auto;
          
      }
      header{
          display: flex;
          justify-content: center;
      }
-     #cart-section{
+     .cart-bttn{
         display: flex;
         background-color: #FF9A3D;
-        height: 30px;
+        height: 50px;
         width: 70px;
         margin-top: 10px;
         border-radius: 20px;
     }
     .cart{
-        padding-left: 10px;
+        /* padding-left: 10px;
         padding-top: 10px;
         height: 20px;
-        width: 25px;
+        width: 25px; */
+        max-width: 500px;
     }
     .counter{
-        display: block;
+        /* display: block; */
        padding-bottom: 10px;
      }
      .container2 img{
         width: 210px;
         height: 310px;
+    }
+    .close{
+        background-color: black;
+        border: none;
+        position: absolute;
+        left: 24px;
+        color: black;
+        display: flex;
+    }
+    .nav-links ul{
+        width: 100%;
+        display: none;
+    }
+    .handburger{
+        background-color: transparent;
+        border: none;
+        display: flex;
+        right: 300px;
     }
 }
