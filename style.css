@@ -167,7 +167,7 @@ header{
 } */
 
 .container2{
-    max-width: 1500px;
+    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
@@ -202,7 +202,7 @@ header{
     /* text-align: center; */
 }
 
-.container2 button{
+.container2 div button{
     height: 45px;
     margin-bottom: 25px;
     background-color: #FF7A00;
@@ -211,9 +211,8 @@ header{
     font-weight: bolder;
     border-radius: 10px;
     font-size: 20px;
-    margin-right: 20px;
     cursor: pointer;
-    padding: 10px 15px;
+    padding: 10px 50px;
 }
 
 footer{
