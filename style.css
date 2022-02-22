@@ -115,7 +115,7 @@ header{
     
 }
 
-.hero-section h3{
+#hero-section h3{
     text-transform: uppercase;
     font-size: 4em;
     margin-left: 100px;
@@ -148,7 +148,12 @@ header{
     font-size: 20px;
 }
 
-.about{
+.shopping-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+#about{
     text-align: center;
     /* line-height: 0.5rem; */
     color: white;
@@ -174,7 +179,7 @@ header{
     grid-gap: 6px;
 }
 
-.products{
+#products{
     background-color: white;
 }
 
@@ -183,7 +188,7 @@ header{
     flex-direction: column;
 }
 
-.products h2{
+#products h2{
     text-align: center;
     text-transform: uppercase;
     font-size: 2.5rem;
@@ -243,6 +248,11 @@ footer img{
     .container2 img{
         width: 200px;
         height: 300px;
+        margin-left: 20px;
+    }
+
+    .product{
+        margin-left: 10px;
     }
     .logo{
         height: 60px;
@@ -284,7 +294,7 @@ footer img{
    .hero-image{
        max-width: 100%;
    }
-   .hero-section h3{
+   #hero-section h3{
        font-size: 1.6em;
        font-weight: bold;
        margin-left: 0;
@@ -307,15 +317,14 @@ footer img{
     .container2{
         display: grid;
         grid-template-columns: auto;
+        margin-left: 1opx;
     
     }
     .container{
         flex-direction: column-reverse;
         width: 100%;
     }
-    .hero-section h3{
-        font-size: 1em;
-    }
+    
     footer{
         flex-direction: column;
         margin: auto;
@@ -323,13 +332,13 @@ footer img{
      body{
          width: 100%;
      }
-     .hero-section h3{
-         font-size: 3em;
+     #hero-section h3{
+         font-size: 1em;
          text-align: center;
          width: 100%;
          margin: 24px auto 0;
      }
-     .hero-section .hero-image{
+     #hero-section .hero-image{
          margin: auto;
          
      }
