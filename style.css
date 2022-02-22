@@ -136,14 +136,15 @@ header{
     text-transform: uppercase;
     background-color: #FF9A3D;
     border-style: none;
-    height: 50px;
-    width: 200px;
+    /* height: 50px;
+    width: 200px; */
     border-radius: 10px;
     color: white;
     text-align: center;
     position: relative;
     left: 45%;
     bottom: 10px;
+    padding: 20px 40px;
     /* margin-bottom: 10px; */
     font-size: 20px;
 }
@@ -333,7 +334,7 @@ footer img{
          width: 100%;
      }
      #hero-section h3{
-         font-size: 1em;
+         font-size: 1.5em;
          text-align: center;
          width: 100%;
          margin: 24px auto 0;
