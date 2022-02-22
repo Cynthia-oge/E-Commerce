@@ -311,6 +311,13 @@ footer img{
     left: 5px;
     top: 3px;
 }
+
+.shopping-btn{
+    position: relative;
+    left: 25%;
+    bottom: 3px;
+    padding: 10px 20px;
+}
 }
 
 @media screen and (max-width: 500px){
