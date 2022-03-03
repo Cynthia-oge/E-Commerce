@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <span class="open-slide" onclick="openSideMenu()">
+        <!--<span class="open-slide" onclick="openSideMenu()">
             <a href="#">
                 <svg width="30" height="30">
                     <path d="M0, 5 30,5" stroke="#000" stroke-width="5"/>
@@ -19,7 +19,7 @@
                     <path d="M0, 23 30,23" stroke="#000" stroke-width="5"/>
                 </svg>
             </a>
-        </span>
+        </span>-->
         <a href="/">
         <img src="Images/EMS.png" class="logo" alt="logo">
     </a>
@@ -38,18 +38,18 @@
         </nav>
         
         <div id="cart-section">
-            <button class="cart-bttn">
+            <button class="cart-bttn" id="cart-bttn">
         <img src="Images/cart.png" class="cart" alt="cart">
         <span class="counter">0</span>
     </button>
     </div>
 
-    <div class="side-nav" id="side-menu" onclick="closeSideMenu()" >
+   <!--<div class="side-nav" id="side-menu" onclick="closeSideMenu()" >
         <a href="#" class="btn-close">&times</a>
         <a href="#hero-section">Intro</a>
         <a href="#about">About</a>
         <a href="#products">Shop</a>
-   </div>
+   </div>--> 
 
     </header>
     <div id="hero-section">
@@ -73,33 +73,34 @@
      <div class="product">
          <img src="Images/product1.png" alt="">
          <p>SAMSUNG TV</p>
-         <div><button>add to cart</button></div>
+         <div class="add-to"><button onclick="changeText(this)" >add to cart</button></div>
+         <!--<div id="remove"><button onclick="changeText()" >REMOVE FROM CART</button></div>-->
      </div>
      <div class="product">
         <div> <img src="Images/product2.png" alt=""></div>
          <p>PIXEL 4a</p>
-        <div> <button>add to cart</button></div>
+        <div class="add-to"> <button onclick="changeText(this)" >add to cart</button></div>
      </div>
      
      <div class="product">
          <div><img src="Images/product3.png" alt=""></div>
          <p>PS 5</p>
-        <div><button>add to cart</button></div>
+        <div class="add-to"><button onclick="changeText(this)" >add to cart</button></div>
      </div>
      <div class="product">
         <div> <img src="Images/product4.png" alt=""></div>
          <p>MACBOOK AIR</p>
-        <div><button>add to cart</button></div>
+        <div class="add-to"><button onclick="changeText(this)">add to cart</button></div>
      </div>
      <div class="product">
         <div> <img src="Images/product5.png" alt=""></div>
          <p>APPLE WATCH</p>
-        <div><button>add to cart</button></div>
+        <div class="add-to"><button onclick="changeText(this)">add to cart</button></div>
      </div>
      <div class="product">
         <div> <img src="Images/product6.png" alt=""></div>
          <p>AIR PODS</p>
-        <div><button>add to cart</button></div>
+        <div class="add-to"><button onclick="changeText(this)">add to cart</button></div>
      </div>
     </div>
 </section>
@@ -107,6 +108,28 @@
     <img src="Images/EMS.png" alt="">
     <p>Designed and crafted by a Frontend Ninja</p>
 </footer>
+<div class="form-bg" id="form-bg">
+    <div class="form-content">
+        <a href="#" class="close" id="close">&times</a>
+        <div class="head-titles">
+            <p>S/N</p>
+            <P>Item</P>
+            <p>Price</p>
+            <p>Quality</p>
+        </div>
+        <form action="">
+            <input type="text" name="name" placeholder="Your Name" id="name">
+            <input type="email" name="email" placeholder="Your Email" id="email">
+            <input type="number" name="number" placeholder="Your Phone Number" id="number">
+        </form>
+        <p>Total Amount to be Paid</p>
+        <p><span>&#8358</span> 0</p>
+        <div class="form-bttn">
+            <button>Continue Shopping</button>
+            <button>Checkout</button>
+        </div>
+    </div>
+</div>
 <script src="/main.js"></script>
 </body>
 </html>
